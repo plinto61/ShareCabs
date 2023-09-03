@@ -1,8 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
 import { MainSearch } from './src/screens/main-search';
+import { Listing } from './src/screens/listing';
 
 const Stack = createNativeStackNavigator();
 
@@ -11,6 +10,7 @@ export default function App() {
 		<NavigationContainer>
 			<Stack.Navigator>
 				<Stack.Screen name="MainSearch" component={MainSearch} />
+				<Stack.Screen name="Listing" component={Listing} />
 			</Stack.Navigator>
 		</NavigationContainer>
 	);
