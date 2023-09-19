@@ -9,8 +9,8 @@ export default function App() {
 	return (
 		<NavigationContainer>
 			<Stack.Navigator>
-				<Stack.Screen name="MainSearch" component={MainSearch} />
 				<Stack.Screen name="Listing" component={Listing} />
+				<Stack.Screen name="MainSearch" component={MainSearch} />
 			</Stack.Navigator>
 		</NavigationContainer>
 	);
